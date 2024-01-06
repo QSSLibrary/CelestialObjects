@@ -10,18 +10,18 @@
     class Name {
         public:
             /**
-             * @brief Construct a New Name Object
+             * @brief Construct a New Name
              */
             Name() {
-                this->name = nullptr;
+                this->common = nullptr;
                 this->symbol = nullptr;
                 this->designations = nullptr;
             }
             /** 
-             * @brief Construct a New Name Object
+             * @brief Construct a New Name
              */
             Name(const Name& _name) {
-                this->name = _name.name;
+                this->common = _name.common;
                 this->symbol = _name.symbol;
                 this->designations = _name.designations;
             }
@@ -31,15 +31,15 @@
              * @return Name& 
              */
             Name& operator=(const Name& _name) {
-                this->name = _name.name;
+                this->common = _name.common;
                 this->symbol = _name.symbol;
                 this->designations = _name.designations;
                 return *this;
             }
             /**
-             * @brief Name of Celestial Object
+             * @brief Main Name of Celestial Object
              */
-            char* name;
+            char* common;
             /**
              * @brief Symbol of Celestial Object
              */
