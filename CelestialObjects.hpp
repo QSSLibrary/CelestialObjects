@@ -6,6 +6,10 @@
      * @date 2024-01-06
      */
     # define QSSL_CELESTIAL_OBJECTS
+    //-- Include Celestial Objects' Names
+    # ifndef QSSL_CELESTIAL_OBJECTS_NAME
+        # include "Name.hpp"
+    # endif // QSSL_CELESTIAL_OBJECTS_NAME
 # endif // QSSL_CELESTIAL_OBJECTS
 
 
