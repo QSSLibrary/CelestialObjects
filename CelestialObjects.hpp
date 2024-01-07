@@ -26,6 +26,9 @@
         LOAD_FROM_DEFAULT =     2,
         LOAD_FROM_FILE =        1
     };
+    /**
+     * @brief Celestial Object Save Methods
+     */
     enum CelestialObjectSaveMethods {
         SAVE_TO_DATABASE =      4,
         SAVE_TO_INTERNET =      3,
@@ -59,27 +62,18 @@
             /**
              * @brief Construct a New Celestial Objects
              */
-            CelestialObjects() {
-                id = UNKNOWN_ID;
-            }
+            CelestialObjects();
             /**
              * @brief Construct a new Celestial Objects
              * @param _celestialObject Celestial Object
              */
-            CelestialObjects(const CelestialObjects& _celestialObject) {
-                id = _celestialObject.id;
-                name = _celestialObject.name;
-            }
+            CelestialObjects(const CelestialObjects& _celestialObject);
             /**
              * @brief Assign Operator
              * @param _celestialObject Celestial Object 
              * @return CelestialObjects& 
              */
-            CelestialObjects& operator=(const CelestialObjects& _celestialObject) {
-                id = _celestialObject.id;
-                name = _celestialObject.name;
-                return *this;
-            }
+            CelestialObjects& operator=(const CelestialObjects& _celestialObject);
             /**
              * @brief Load Celestial Object with These Methods :
              * @brief 1. Load from Database
